@@ -14,5 +14,8 @@ void Result::Draw()
 
 Scene Result::Shift()
 {
-	return Scene();
+	if (env.isPushKey('A')) {
+		return Scene::TITLE;
+	}
+	return Scene::RESULT;
 }

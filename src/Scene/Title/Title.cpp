@@ -14,5 +14,8 @@ void Title::Draw()
 
 Scene Title::Shift()
 {
-	return Scene();
+	if (env.isPushKey('A')) {
+		return Scene::GAMEMAIN;
+	}
+	return Scene::TITLE;
 }

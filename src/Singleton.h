@@ -9,7 +9,7 @@ using namespace std;
 enum Window
 {
 	WIDTH = 1280,
-	HEIGHT = 720
+	HEIGHT = 820
 };
 
 class App
