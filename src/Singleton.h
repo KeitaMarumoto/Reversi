@@ -1,5 +1,8 @@
 #pragma once
 #include "lib/framework.hpp"
+#include <memory>
+
+using namespace std;
 
 #define env App::get()
 
@@ -20,4 +23,11 @@ public:
 							true);
 		return s_env;
 	}
+};
+
+enum class Scene
+{
+	TITLE,
+	GAMEMAIN,
+	RESULT
 };
