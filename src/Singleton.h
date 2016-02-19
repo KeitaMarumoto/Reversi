@@ -12,4 +12,12 @@ enum Window
 class App
 {
 public:
+	static AppEnv& get() 
+	{
+		static AppEnv s_env(Window::WIDTH,
+							Window::HEIGHT, 
+							false, 
+							true);
+		return s_env;
+	}
 };
