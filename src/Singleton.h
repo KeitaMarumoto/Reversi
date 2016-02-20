@@ -1,6 +1,8 @@
 #pragma once
 #include "lib/framework.hpp"
 #include <memory>
+#include <vector>
+#include <fstream>
 
 using namespace std;
 
@@ -30,4 +32,11 @@ enum class Scene
 	TITLE,
 	GAMEMAIN,
 	RESULT
+};
+
+enum StoneColor
+{
+	EMPTY,
+	BLACK,
+	WHITE
 };

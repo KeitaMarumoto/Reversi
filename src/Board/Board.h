@@ -10,8 +10,15 @@ private:
 	Vec2f outer_size;
 	Vec2f inner_pos;
 	Vec2f inner_size;
+	int board_elem;
+
 public:
 	Board();
 	void Update();
 	void Draw();
+	void TouchMatrix();
+	Vec2f getPos();
+	float getChipSize();
+	Vec2f getBoardSize();
+	void setChipSize(int);
 };

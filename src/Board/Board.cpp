@@ -35,3 +35,31 @@ void Board::Draw()
 				 Color::black);
 	}
 }
+
+void Board::TouchMatrix()
+{
+	Vec2f mpos = env.mousePosition();
+	for (int i = 1;i<=board_elem)
+	if(inner)
+}
+
+Vec2f Board::getPos()
+{
+	return inner_pos;
+}
+
+float Board::getChipSize()
+{
+	return chip_size;
+}
+
+Vec2f Board::getBoardSize()
+{
+	return inner_size;
+}
+
+void Board::setChipSize(int _elem)
+{
+	board_elem = _elem;
+	chip_size = inner_size.x() / _elem;
+}
