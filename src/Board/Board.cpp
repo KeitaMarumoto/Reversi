@@ -39,8 +39,6 @@ void Board::Draw()
 void Board::TouchMatrix()
 {
 	Vec2f mpos = env.mousePosition();
-	for (int i = 1;i<=board_elem)
-	if(inner)
 }
 
 Vec2f Board::getPos()
